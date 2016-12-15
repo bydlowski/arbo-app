@@ -1,0 +1,13 @@
+page-projects {
+	.item-md {
+		.urgent-bar {width: 100%; height: 4px; margin-bottom: 5px; display: block;}
+		.next-arrow {position: absolute; right: 20px; top: 0; bottom: 0; display: inline-table; color: #c9c8ce; margin: auto; font-size: 28px;}
+		h2, h3, h4 {padding: 2px 5px;}
+		h2 {font-size: 18px; color: #6fd484;}
+		h3 {font-size: 17px;}
+		h4 {font-size: 14px; color: #b4b4b4;}
+		.urgent-red {background: #ff0047;}
+		.urgent-yellow {background: #ffb934;}
+		.urgent-green {background: #257e43;}
+	}
+}
