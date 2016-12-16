@@ -7,7 +7,76 @@
 
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content padding class="chatPage">
+  <ion-list no-lines>
+    <ion-item *ngIf="subtitleText == 'Letícia e Roberto'">
+      <div class="message chat-day chat-day-first"><p>HOJE</p></div>
+      <div class="message">
+        <div class="chat-bubble left">
+          <p>Oi Ana, tudo bem? Como vai você??</p>
+          <div class="chat-time">16:33</div>
+        </div>
+      </div>
+      <div class="message">
+        <div class="chat-bubble right">
+          <p>Tudo bem e você?<br/>Veja como está ficando.</p>
+          <div class="chat-time">16:40</div>
+        </div>
+      </div>
+      <div class="message">
+        <div class="chat-bubble img-chat img-right">
+          <img src="http://escottarchitects.com/wp-content/uploads/2013/02/Master-Bedroom-Construction-08.jpg">
+        </div>
+      </div>
+      <div class="message">
+        <div class="chat-bubble left">
+          <p>Nossa, está ficando ótimo!</p>
+          <div class="chat-time">16:43</div>
+        </div>
+      </div>
+    </ion-item>
+    <ion-item *ngIf="subtitleText == 'Adriana e Rodrigo'">
+      <div class="message chat-day chat-day-first"><p>ONTEM</p></div>
+      <div class="message">
+        <div class="chat-bubble right">
+          <p>Acho que vamos poder adiantar a entrega!</p>
+          <div class="chat-time">15:40</div>
+        </div>
+      </div>
+      <div class="message">
+        <div class="chat-bubble left">
+          <p>Que bom!</p>
+          <div class="chat-time">17:20</div>
+        </div>
+      </div>
+      <div class="message chat-day"><p>HOJE</p></div>
+      <div class="message">
+        <div class="chat-bubble right">
+          <p>Pessoal, vocês já viram as fotos enviadas na semana passada?</p>
+          <div class="chat-time">10:18</div>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
+<ion-footer class="chatPageFooter">
+  <ion-toolbar>
+    <ion-buttons left>
+      <button class="chat-icons">
+        <ion-icon name="ios-happy-outline"></ion-icon>
+      </button>
+      <button class="chat-icons">
+        <ion-icon name="ios-camera-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-item>
+      <ion-input type="text" placeholder="Mensagem"></ion-input>
+    </ion-item>
+    <ion-buttons right>
+      <button class="chat-icons" (click)="sendMessage()">
+        <ion-icon name="ios-send-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

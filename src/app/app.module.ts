@@ -13,7 +13,6 @@ import { ListPage } from '../pages/list/list';
 import { UserPage } from '../pages/user/user';
 import { TabsPage } from '../pages/tabs/tabs';
 
-
 @NgModule({
   declarations: [
     MyApp,
