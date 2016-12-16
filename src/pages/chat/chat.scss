@@ -1,3 +1,13 @@
 page-chat {
-
+	.item-md {
+		.next-arrow {position: absolute; right: 20px; top: 0; bottom: 0; display: inline-table; color: #c9c8ce; margin: auto; font-size: 28px;}
+		.chat-time {position: absolute; right: 20px; top: 15px; text-align: right; display: inline-table; font-size: 16px; color: #656464;}
+		h2, h3 {padding: 0 5px;}
+		h2 {font-size: 18px; color: #6fd484;}
+		h3 {font-size: 17px;}
+		h4 {font-size: 13px; color: #b4b4b4;padding: 5px 5px 0 5px;}
+		.urgent-red {background: #ff0047;}
+		.urgent-yellow {background: #ffb934;}
+		.urgent-green {background: #257e43;}
+	}
 }

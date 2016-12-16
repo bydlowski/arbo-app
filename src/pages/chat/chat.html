@@ -8,5 +8,27 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item (click)="seeProject('Desenhar quarto do bebê','Letícia e Roberto')">
+      <h2>Desenhar quarto do bebê</h2> 
+      <h3>Letícia e Roberto</h3>
+      <span class="chat-time">10:10</span>
+      <ion-icon name="ios-arrow-forward" class="next-arrow"></ion-icon>
+      <h4>Ok. Vou verificar com minha esposa e já...</h4>
+    </ion-item>
+    <ion-item (click)="seeProject('Reforma de casa','Adriana e Rodrigo')">
+      <h2>Reforma de casa</h2> 
+      <h3>Adriana e Rodrigo</h3>
+      <span class="chat-time">10:18</span>
+      <ion-icon name="ios-arrow-forward" class="next-arrow"></ion-icon>
+      <h4>Pessoal, vocês já viram as fotos enviadas...</h4> 
+    </ion-item>
+    <ion-item>
+      <h2>Sacada</h2> 
+      <h3>Marcelo e Marco</h3>
+      <span class="chat-time">14:03</span>
+      <ion-icon name="ios-arrow-forward" class="next-arrow"></ion-icon>
+      <h4>Boa tarde, ainda não recebemos se orç...</h4>
+    </ion-item>
+  </ion-list>
 </ion-content>

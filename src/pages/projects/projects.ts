@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-/*
-  Generated class for the Projects page.
+import { ProjectDetailsPage } from '../../pages/project-details/project-details';
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-projects',
   templateUrl: 'projects.html'
@@ -15,8 +11,11 @@ export class ProjectsPage {
 
   constructor(public navCtrl: NavController) {}
 
-  ionViewDidLoad() {
-    console.log('Hello ProjectsPage Page');
+  seeProject(string,substring) {
+    this.navCtrl.push(ProjectDetailsPage, {
+      myString: string,
+      mySubstring: substring
+  	});
   }
 
 }

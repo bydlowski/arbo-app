@@ -1,0 +1,21 @@
+page-project-details {
+	.subtitle-text {padding: 0 12px; color: #fff;}
+	.segment-md .segment-button.segment-activated {background: #4dc36c;border-color: #4dc36c;}
+	.segment-md .segment-button {color:#4dc36c; text-transform:none; border-color: #4dc36c;font-size: 16px;}
+	.segment-md .segment-button.segment-activated {border-color: #4dc36c}
+	.segment-ios .segment-button.segment-activated {background: #4dc36c;border-color: #4dc36c}
+	.activated {background: #4dc36c!important;border-color: #4dc36c!important}
+	.label-md {margin: 5px 8px 5px 0;}
+	.segment-ios .segment-button:first-of-type {border-radius:  10px 0 0 10px;}
+	.segment-ios .segment-button:last-of-type {border-radius: 0 10px 10px 0;}
+	.item-md {
+		.urgent-circle {float: left;font-size: 45px;margin-right: 10px;}
+		//.next-arrow {position: absolute; right: 20px; top: 0; bottom: 0; display: inline-table; color: #c9c8ce; margin: auto; font-size: 28px;}
+		h2, h4 {padding: 2px 5px;}
+		h2 {font-size: 18px;line-height: 10px;margin-top: 15px;}
+		h4 {font-size: 13px; color: #b4b4b4;}
+		.urgent-red {color: #ff0047;}
+		.urgent-yellow {color: #ffb934;}
+		.urgent-green {color: #257e43;}
+	}
+}

@@ -1,0 +1,81 @@
+<ion-header>
+
+  <ion-navbar color="arbo-header-bg">
+    <ion-title class="title-text">{{ titleText }}</ion-title>
+    <div class="subtitle-text">{{ subtitleText }}</div>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-toolbar class="toolbar toolbar-ios" no-border-top="">
+    <div class="toolbar-background"></div>
+    <div class="toolbar-content">
+      <ion-segment class="segment segment-ios ng-untouched ng-pristine ng-valid">
+        <ion-segment-button class="segment-button segment-activated" role="button" tappable="" value="Paid" aria-pressed="true">
+          Atividades
+        <div class="button-effect"></div></ion-segment-button>
+        <ion-segment-button class="segment-button" role="button" tappable="" value="Free" aria-pressed="false" style="transition: none;">
+          Conversas
+        <div class="button-effect"></div></ion-segment-button>
+        <ion-segment-button class="segment-button" role="button" tappable="" value="Top" aria-pressed="false">
+          Fotos
+        <div class="button-effect"></div></ion-segment-button>
+      </ion-segment>
+    </div>
+  </ion-toolbar>
+  <ion-list *ngIf="subtitleText == 'Letícia e Roberto'">
+    <ion-item>
+      <span class="urgent-circle urgent-red">
+        <ion-icon name="ios-remove-circle-outline" class="next-arrow"></ion-icon>
+      </span>
+      <h2 class="urgent-red">Desenhar</h2> 
+      <h4>Finalizar até: hoje</h4>
+    </ion-item>
+    <ion-item>
+      <span class="urgent-circle urgent-yellow">
+        <ion-icon name="ios-remove-circle-outline" class="next-arrow"></ion-icon>
+      </span>
+      <h2 class="urgent-yellow">Fazer memorial descritivo</h2> 
+      <h4>Finalizar até: amanhã</h4>
+    </ion-item>
+    <ion-item>
+      <span class="urgent-circle urgent-green">
+        <ion-icon name="ios-checkmark-circle-outline" class="next-arrow"></ion-icon>
+      </span>
+      <h2 class="urgent-green">Memorial descritivo</h2> 
+      <h4>Finalizado em 10/10/2016</h4>
+    </ion-item>
+    <ion-item>
+      <span class="urgent-circle urgent-green">
+        <ion-icon name="ios-checkmark-circle-outline" class="next-arrow"></ion-icon>
+      </span>
+      <h2 class="urgent-green">Memorial descritivo</h2> 
+      <h4>Finalizado em 10/10/2016</h4>
+    </ion-item>
+    <ion-item>
+      <span class="urgent-circle urgent-green">
+        <ion-icon name="ios-checkmark-circle-outline" class="next-arrow"></ion-icon>
+      </span>
+      <h2 class="urgent-green">Memorial descritivo</h2> 
+      <h4>Finalizado em 10/10/2016</h4>
+    </ion-item>
+  </ion-list>
+  <ion-list *ngIf="subtitleText == 'Adriana e Rodrigo'">
+    <ion-item>
+      <span class="urgent-circle urgent-green">
+        <ion-icon name="ios-checkmark-circle-outline" class="next-arrow"></ion-icon>
+      </span>
+      <h2 class="urgent-green">Desenhar projeto</h2> 
+      <h4>Finalizado em 07/12/2016</h4>
+    </ion-item>
+    <ion-item>
+      <span class="urgent-circle urgent-green">
+        <ion-icon name="ios-checkmark-circle-outline" class="next-arrow"></ion-icon>
+      </span>
+      <h2 class="urgent-green">Fazer memorial descritivo</h2> 
+      <h4>Finalizado em 01/12/2016</h4>
+    </ion-item>
+  </ion-list>
+</ion-content>
