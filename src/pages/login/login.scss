@@ -1,0 +1,11 @@
+page-login {
+	.logo-login {text-align: center;height: 180px;}
+	.logo-login h1 {line-height: 180px; font-size: 50px; font-weight: bold;}
+	.login-component {background: #4dc36c; color: #fff;}
+	.item-input .label-md {color:#fff;}
+	.list-md .item-block .item-inner {border-bottom: 1px solid #dedede!important;}
+	.item-md.item-input.item-has-focus.item-inner {border-bottom-color:transparent!important;}
+  .item-inner {border-bottom-color:transparent!important;box-shadow: none!important}
+  .list-md .item-input.input-has-focus:last-child {border-bottom-color:transparent!important;box-shadow: none!important;}
+  .input-has-focus .label-md[floating] {color:#fff;}
+}

@@ -12,6 +12,8 @@ import { CameraPage } from '../pages/camera/camera';
 import { ListPage } from '../pages/list/list';
 import { UserPage } from '../pages/user/user';
 import { TabsPage } from '../pages/tabs/tabs';
+import { LoginPage } from '../pages/login/login';
+import { Auth } from '../providers/auth';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     CameraPage,
     ListPage,
     UserPage,
-    TabsPage
+    TabsPage,
+    LoginPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -38,8 +41,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     CameraPage,
     ListPage,
     UserPage,
-    TabsPage
+    TabsPage,
+    LoginPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Auth]
 })
 export class AppModule {}
