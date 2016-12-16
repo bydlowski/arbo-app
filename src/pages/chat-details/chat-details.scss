@@ -4,30 +4,14 @@ page-chat-details {
   .message {font-size: medium;word-wrap: break-word;white-space: initial;display: block;}
   .message-detail {white-space: nowrap;font-size: 14px;}
 
-  .chat-bubble {
-    border-radius: 5px;
-    display: inline-block;
-    padding: 4px 18px;
-    position: relative;
-    margin: 10px;
-    max-width: 80%;
-    border: 1px solid #c9c9c9;
-    line-height: 4px;
-    color: #000;
-    font-size: 14px;
-  }
-
+  .chat-bubble {border-radius: 5px;display: inline-block;padding: 4px 18px;position: relative;margin: 10px;max-width: 80%;border: 1px solid #c9c9c9;line-height: 4px;color: #000;font-size: 14px;}
   .chat-bubble p {color: #000;font-size: 14px; margin: 0;line-height: 18px;}
   .chat-bubble:before {content: "\00a0";display: block;height: 16px;width: 9px;position: absolute;bottom: -8.5px;}
   .chat-bubble.left {background-color: #eefaef;float: left;margin-left: 10px;padding-right: 50px;}
   .chat-bubble.left:before {background-color: #eefaef;left: 10px;-webkit-transform: rotate(70deg) skew(5deg);border-bottom: 1px solid #c9c9c9;border-right: 1px solid #c9c9c9;}
   .chat-bubble.right {background-color: #fff8ea;color: #000;float: right;margin-right: 10px;padding-right: 50px;}
   .chat-bubble.right:before {background-color: #fff8ea;right: 10px;-webkit-transform: rotate(118deg) skew(-5deg);border-top: 1px solid #c9c9c9;border-right: 1px solid #c9c9c9;}
-
-  .chat-bubble.right a.autolinker {
-    color: #000;
-    font-weight: bold;
-  }
+  .chat-bubble.right a.autolinker {color: #000;font-weight: bold;}
   .chat-time {position: absolute; top: 7px; right: 4px; font-size: 10px;}
   .img-chat {max-width: 70%; margin: 1px; padding: 2px 4px; line-height: 1px;}
   .img-right {float: right;margin-right: 10px;}
